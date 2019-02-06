@@ -1,0 +1,59 @@
+<html>
+<style>
+    input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 15%;
+  background-color: #c93d1b;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=reset] {
+  width: 15%;
+  background-color: #ffbe00;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0ad8f3;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+    <head>
+        <h style="font-family:'Times New Roman', Times, serif; font-size:medium"><b><i> Contact Formulier</i></b></h>
+        <body>
+                <div>
+                <form action="form.php" method="POST">
+                        <p>VoorNaam</p> <input type="text" name=" voornaam" placeholder="jouw naam...">
+                        <p>AchterNaam</p> <input type="text" name="achternaam" placeholder="jouw achternaam...">
+                        <p>GeborteDatum</p> <input type="text" name="gebortedatum" placeholder="dd/mm/jaar">
+                        <p>Email</p> <input type="text" name="email" placeholder="jane@example.com">
+                        <p>Opinion</p><textarea name="Opinion" rows="6" cols="25" placeholder="schrijf jouw mening"></textarea><br />
+                        <input type="submit" value="Send"><input type="reset" value="Clear">
+                        </form>
+
+                    </div>
+        </body>
+    </head>
+</html>
